@@ -1,0 +1,632 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------ */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "ｍｓ ｐ明朝","ms pmincho","ヒラギノ明朝 pro w3","hiragino mincho pro","serif";
+    line-height: 1.6;
+    color: #444251;
+}
+
+a {
+    color: #444251;
+    text-decoration: none;
+}
+a span {
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 18px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+    font-size: 16px;
+}
+.main-nav a {
+    color: #444251;
+}
+.main-nav a:hover {
+    color: #9D767A;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+/* HOME
+-------------------------------- */
+.home-content {
+    max-width: 1000px;
+    margin-top: 0 auto;
+    position: relative;
+}
+.home-content p {
+    font-size: 24px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;
+}
+
+/* 見出し */
+.page-title {
+    font-size: 56px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;
+    border-bottom: 1px solid #9D767A;
+    width: 400px;
+
+}
+.anime {
+    opacity: 0;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 150px;
+}
+@keyframes anime {
+    0% {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+#home {
+    background-image: url(/Users/chii/Desktop/portfolio/images/pexels-leticia-alvares-1805702-25542556_edited.jpg);
+    height: 510px;
+}
+#home .page-title {
+    text-transform: none;
+}
+
+/* プロフィール */
+.profile-content {
+    max-width: 1000px;
+    margin-top: 7%;
+}
+.profile-content p {
+    font-size: 15px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.heading h3 {
+    font-size: 32px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+}
+
+hr {
+    margin: 0 auto;
+}
+
+
+
+
+
+/* 横並び */
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.flex img {
+    width: 237px;
+    height: 237px;
+    margin-top: 60px;
+}
+.flex .text {
+    margin-top: 55px;
+    margin-left: 160px;
+    text-align: left;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+}
+.text span {
+    font-size: 36px;
+    font-weight: bold;
+}
+.flex a {
+    font-size: 14px;
+    color: #9D767A;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: right;
+    margin-left: 76%;
+}
+
+/* スキル */
+.skill-content {
+    max-width: 1000px;
+    margin-top: 7%;
+}
+.skill-content p {
+    font-size: 15px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.heading h4 {
+    font-size: 32px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    border-bottom: #9D767A;
+}
+
+.bar3 {
+    width: 200px;
+    background-color: #9D767A;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container img{
+    width: 75px;
+    height: auto;
+    margin: 40px;
+    padding: 0;
+}
+.text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text-container span {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.text-container p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-top: 1px;
+    margin-bottom: 40px;
+}
+
+/* works */
+.work-content {
+    max-width: 1000px;
+    margin-top: 7%;
+}
+
+.work-content p {
+    font-size: 15px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.heading h5 {
+    font-size: 32px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    border-bottom: #9D767A;
+}
+
+.bar4 {
+    width: 200px;
+    background-color: #9D767A;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.item img {
+    height: 295px;
+    width: 526px;
+    margin: 0;
+    padding: 0;
+}
+
+.item img:hover {
+    filter: brightness(85%);
+}
+
+.item p {
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+/* contact */
+.contact {
+    margin-top: 50px;
+    
+    /* 背景画像の設定 */
+    background-image: url(https://static.wixstatic.com/media/95aa41_4e7bd301efd7485c98b8ca2b3e762080~mv2.jpg);
+    background-color: rgba(225, 216, 207, 0.5);
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    min-height: 708px;
+}
+
+
+
+
+.contact h6 {
+    font-size: 32px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.contact p {
+    font-size: 15px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+/* フォーム */
+
+form {
+    text-align: center;
+}
+
+.form-container {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 414px; /* フィールドと同じ最大幅を設定 */
+}
+
+form div label,
+form div input,
+form div textarea {
+    text-align: left;
+    display: inline-block; /* 横並びを防ぎ、ブロック要素にする */
+    width: 100%;
+    max-width: 414px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: #FFFFFF;
+    border: 1px #E1D8CF solid;
+    padding: 10px;
+    font-size: 14px;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 414px;
+    
+}
+textarea {
+    width: 100%;
+    max-width: 414px;
+    height: 88px;
+}
+
+
+input[type="submit"] {
+    border: 1px;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #EEE8E2;
+    height: 42px;
+    width: 147px;
+    margin-left: 270px;
+}
+
+
+
+/* フッター
+------------------------------- */
+footer {
+    text-align: center;
+}
+footer p {
+    font-size: 15px;
+}
+
+
+
+
+
+/* profile
+------------------------------ */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex img {
+    display: inline-block;
+    align-items: center;
+}
+
+ 
+
+.flex p {
+    flex-direction: column;
+}
+.profile {
+    max-width: 1000px;
+}
+.prof {
+    display: inline-block;
+    text-align: center;
+}
+
+.prof p {
+    font-size: 16px;
+    font-family: "ｍｓ ｐゴシック", "ms pgothic", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", osaka, sans-serif;;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 2.0;
+}
+
+.normal {
+    margin-top: 90px;
+    margin-bottom: 35px;
+    margin-left: 320px;
+}
+
+.no2 {
+    margin-bottom: 35px;
+    margin-left: 320px;
+
+}
+
+.no3 {
+    margin-bottom: 80px;
+    margin-left: 320px;
+    
+}
+
+.no4 {margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 320px;
+
+}
+
+/* web1
+---------------------------- */
+.web1 {
+    max-width: 1000px;
+}
+
+a img {
+    height: 445px;
+    width: 862px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.group {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-left: 50px;
+}
+
+
+/* web2 
+------------------------------*/
+.web2 {
+    max-width: 1000px;
+
+}
+
+a img {
+    height: 445px;
+    width: 862px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.group {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-left: 50px;
+}
+
+
+
+/* LP 
+------------------------------*/
+.web3 {
+    max-width: 1000px;
+}
+
+a img {
+    height: 445px;
+    width: 862px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.group {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-left: 50px;
+}
+
+
+
+
+/* meishi
+------------------------------*/
+.meishi {
+    max-width: 1000px;
+}
+
+img {
+    height: 445px;
+    width: 862px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.group {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-left: 50px;
+}
+
+
+
+
+
+/* SNS
+------------------------------*/
+.sns {
+    max-width: 1000px;
+}
+
+.creative {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    height: 461px;
+    margin: 369px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.group2 {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+    margin-left: 5px;
+}
+
+
+/* LP-2
+------------------------------*/
+.lp {
+    max-width: 1000px;
+    border-color: #9D767A;
+    text-align: center;
+}
+
+div.outer {
+    display: inline-block;
+    background-color:rgba(157, 118, 122, 0.25);
+    border: 1px solid rgba(157, 118, 122, 0.4);
+    width: 812px;
+    height: 3060px;
+    margin-top: 70px;
+}
+
+div.inner {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
